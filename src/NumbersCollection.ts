@@ -1,6 +1,10 @@
 export class NumbersCollection {
   constructor(public data: number[]) {}
 
+  get length(): number {
+    return this.data.length;
+  }
+
   compare(leftIndex: number, rightIndex: number): boolean {
     return this.data[leftIndex] > this.data[rightIndex];
   }
@@ -10,10 +14,4 @@ export class NumbersCollection {
     this.data[leftIndex] = this.data[rightIndex];
     this.data[rightIndex] = leftHand;
   }
-
-get length(): number {
-    return this.data.length;
-  }
 }
-
-
