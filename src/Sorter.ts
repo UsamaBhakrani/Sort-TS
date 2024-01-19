@@ -5,6 +5,10 @@ interface Sortable {
 }
 
 export abstract class Sorter {
+  abstract compare(leftIndexArg: number, rightIndexArg: number): boolean;
+  abstract swap(leftIndexArg: number, rightIndexArg: number): void;
+  abstract length: number;
+
   sort(): void {
     const { length } = this;
 

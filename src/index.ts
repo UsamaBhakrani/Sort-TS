@@ -10,9 +10,12 @@ const charactersCollection = new CharactersCollection("Harlow");
 // const characterSorter = new Sorter(charactersCollection);
 
 // numberSorter.sort();
-// characterSorter.sort();
+charactersCollection.sort();
+console.log(charactersCollection.data);
 
-console.log(numbersCollection.sort());
+numbersCollection.sort()
+console.log(numbersCollection.data);
+
 
 // console.log(numbersCollection.length);
 // console.log(numbersCollection.data);
