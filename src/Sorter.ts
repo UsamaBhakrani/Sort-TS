@@ -4,7 +4,7 @@ interface Sortable {
   swap(leftIndexArg: number, rightIndexArg: number): void;
 }
 
-export class Sorter {
+export abstract class Sorter {
   sort(): void {
     const { length } = this;
 
